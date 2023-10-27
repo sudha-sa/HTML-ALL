@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin: 50px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-page {
+  display: none;
+}
+
+.form-page:first-child {
+  display: block;
+}
+
+button {
+  margin-top: 10px;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery pagination</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="a8style.css">
+   
+</head>
+<body>
+    <div class="pagination-header">
+      <div class="dropdown-container">
+         <select name="" id="table-size">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+         </select>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Sr. No.</td>
+                <td>Full Name</td>
+                <td>Designation</td>
+                <td>Experience</td>
+                <td>Salary</td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr> 
+                <td>John</td>
+                <td>Software Developer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Michale</td>
+                <td>Designer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+             <tr>
+                <td>Alan</td>
+                <td>Engineer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Tiger</td>
+                <td>Manager</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Soveil</td>
+                <td>Designer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr> 
+                <td>John</td>
+                <td>Software Developer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Michale</td>
+                <td>Designer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+             <tr>
+                <td>Alan</td>
+                <td>Engineer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Tiger</td>
+                <td>Manager</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Soveil</td>
+                <td>Designer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr> 
+                <td>John</td>
+                <td>Software Developer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Michale</td>
+                <td>Designer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+             <tr>
+                <td>Alan</td>
+                <td>Engineer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Tiger</td>
+                <td>Manager</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Soveil</td>
+                <td>Designer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr> 
+                <td>John</td>
+                <td>Software Developer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Michale</td>
+                <td>Designer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+             <tr>
+                <td>Alan</td>
+                <td>Engineer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Tiger</td>
+                <td>Manager</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Soveil</td>
+                <td>Designer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr> 
+                <td>John</td>
+                <td>Software Developer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Michale</td>
+                <td>Designer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+             <tr>
+                <td>Alan</td>
+                <td>Engineer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Tiger</td>
+                <td>Manager</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Soveil</td>
+                <td>Designer</td>
+                <td>5.6</td>
+                <td>5000</td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <div class="pagination-footer">
+        <span class="pagination-details"></span>
+        <div class="pagination-buttons"class="active" type="button">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script src="a8main.js"></script>

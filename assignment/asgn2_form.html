@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <h3>Enter username and password</h3>
+    </div>
+
+<form action="#" method="post" onsubmit="return validate()">
+    <p>
+       <label for="username">Username</label>
+       <input type="text" id="username" name="username" placeholder="Username">
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input name="password" id="password" type="password">
+    </p>
+    <p>
+        <label for="confirm password">onfirm Password</label>
+        <input name="confirm password" id="confirm password" type="password" onkeyup="check(this)">
+        <error id="alert"></error>
+    </p>
+<!-- <button type="submit"></button> -->
+     <input type="submit" name="submit" value="submit">
+     <input type="reset" name="reset" value="reset">
+</form>
+</body>
+<script type="text/javascript">
+    var password = document.getElementById('password');
+    var flag = 1;
+    function check(elem){
+        if(elem.value.length > 0){
+            if(elem.value != password.value){
+               document.getElementById('alert').innerHTML = "confirm password doesn't match";
+               flag = 0;
+            }
+            else{
+                document.getElementById('alert').innerHTML = "";
+                flag = 1;
+            }
+        }
+        else{
+            document.getElementById('alert').innerHTML = "Please enter confirm password";
+            flag = 0;
+        }
+    }
+function validate(){
+    if(flag==1){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+</script>
+</html>
